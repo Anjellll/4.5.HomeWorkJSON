@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="oCl-Ea-dt9" customClass="CategoryCollectionViewCell" customModule="__5_HomeWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QMp-Cw-2LI">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wyr-zJ-I5U">
+                        <rect key="frame" x="10" y="6" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="MbT-uY-Z1M"/>
+                            <constraint firstAttribute="width" constant="24" id="YuD-lg-KqM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYA-XM-Kxy">
+                        <rect key="frame" x="44" y="11" width="51" height="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VYA-XM-Kxy" firstAttribute="leading" secondItem="wyr-zJ-I5U" secondAttribute="trailing" constant="10" id="L3d-WQ-fBZ"/>
+                    <constraint firstItem="wyr-zJ-I5U" firstAttribute="leading" secondItem="QMp-Cw-2LI" secondAttribute="leading" constant="10" id="NNr-YR-rIq"/>
+                    <constraint firstItem="wyr-zJ-I5U" firstAttribute="top" secondItem="QMp-Cw-2LI" secondAttribute="top" constant="6" id="aYc-N2-eFY"/>
+                    <constraint firstAttribute="trailing" secondItem="VYA-XM-Kxy" secondAttribute="trailing" constant="10" id="fXI-b0-46h"/>
+                    <constraint firstItem="VYA-XM-Kxy" firstAttribute="top" secondItem="QMp-Cw-2LI" secondAttribute="top" constant="11" id="sfC-mW-jbM"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="18"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="categoryCustomView" destination="QMp-Cw-2LI" id="pep-Wa-1my"/>
+                <outlet property="dataHorizantallyLabel" destination="VYA-XM-Kxy" id="OJq-5i-11P"/>
+                <outlet property="imageIconImage" destination="wyr-zJ-I5U" id="Bjc-5K-Ywg"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="16.901408450704228"/>
+        </collectionViewCell>
+    </objects>
+</document>
